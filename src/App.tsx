@@ -312,7 +312,7 @@ export default function App() {
     e.preventDefault();
   };
 
-  const handleDrop = (e: React.DragEvent, targetColumnId: 'backlog' | 'in-progress' | 'review' | 'done') => {
+  const handleDrop = (e: React.DragEvent, targetColumnId: 'Backlog to Pre' | 'In-Progress Na' | 'E Review Pa' | 'Okay Na To') => {
     e.preventDefault();
     const taskId = e.dataTransfer.getData('text/plain');
     if (taskId) {
@@ -372,7 +372,7 @@ export default function App() {
             <div className="relative hidden md:block">
               <input
                 type="text"
-                placeholder="Filter tasks by text..."
+                placeholder="Filter tasks by text uy..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-8 pr-8 py-1.5 bg-slate-100 border-none rounded text-xs w-52 focus:outline-none focus:ring-1 focus:ring-indigo-500 text-slate-800"
