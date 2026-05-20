@@ -75,7 +75,7 @@ export default function TeamView({
         <div className="bg-white border border-slate-200 p-5 rounded shadow-sm h-fit">
           <div className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3 flex items-center gap-1.5">
             <UserPlus className="w-4 h-4 text-indigo-500" />
-            <span>Add Team Member</span>
+            <span>Maglagay ng Bagong Team Pre!</span>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-3">
