@@ -1,0 +1,6 @@
+{
+  "name": "Kanban Board",
+  "description": "High-density developer task management Kanban board with dynamic search filters, subtask tracking, and offline persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

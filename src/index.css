@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Custom mini scrollbars for high density boards */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 99px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Dark mode custom scrollbars for sidebar */
+#app-sidebar.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+#app-sidebar.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Subtle transitions for smoother drop hover highlights */
+.drag-hovering {
+  border-color: #6366F1 !important;
+  background-color: rgba(99, 102, 241, 0.03) !important;
+}
+
+/* Focus and ring animations */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #6366F1 !important;
+}
+
+button {
+  transition: all 100ms ease;
+}
